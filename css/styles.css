@@ -1,0 +1,19 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет #757575 */
+/* Цвет Studio #000000 */
+/* цвет акцент #2196F3 */
+/* белый цвет #FFFFFF */
+/* серый фон #2F303A */
+/* background шапки #ECECEC */
+/* background 1: #E5E5E5 */
+/* background 2: #F5F4FA */
+body {
+  background-color: #e5e5e5;
+  color: #757575;
+}
+header {
+  background-color: #ececec;
+}
+ul {
+  list-style: none;
+}
