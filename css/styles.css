@@ -7,11 +7,12 @@
   --background-hero: #2f303a;
   --background-section-one: #e5e5e5;
   --background-section-three: #f5f4fa;
+  --text-logo-primary: #000000;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #757575;
+  color: var(--first-text-color);
 }
 
 .list {
@@ -41,23 +42,25 @@ body {
   background-color: var(--background-header);
 }
 
-.header-logo {
+.logo {
   font-family: Raleway;
   font-weight: 700px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
 }
-.header-logo:hover,
-.header-logo:focus {
+.logo:hover,
+.logo:focus {
   color: var(--second-title-color);
 }
-.header-logo-web {
+.logo-web {
   color: var(--second-title-color);
+}
+.logo-primary {
+  color: var(--text-logo-primary);
 }
 
-.header-link {
+.nav-link {
   font-weight: 500px;
   font-size: 14px;
   line-height: 1.14;
@@ -65,30 +68,30 @@ body {
   color: var(--main-title-color);
 }
 
-.header-link:hover,
-.header-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--second-title-color);
 }
-.header-link.current {
+.nav-link.current {
   color: var(--second-title-color);
 }
 
-.header-tel {
+.contact {
   font-weight: 500px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
 }
-.header-tel:hover,
-.header-tel:focus {
+.contact:hover,
+.contact:focus {
   color: var(--second-title-color);
 }
 /* -----------------------HERO------------------- */
 .hero {
   background-color: var(--background-hero);
 }
-.hero-title {
+.primary-title {
   font-weight: 900px;
   font-size: 44px;
   line-height: 1.36;
@@ -97,7 +100,7 @@ body {
   text-transform: uppercase;
   color: var(--second-text-color);
 }
-.hero-btn {
+.primary-btn {
   font-family: Roboto;
   font-weight: 700px;
   font-size: 16px;
@@ -134,7 +137,7 @@ body {
   background-color: var(--background-section-one);
 }
 
-.works-title {
+.section-title {
   font-weight: 700px;
   font-size: 36px;
   line-height: 1.16;
@@ -148,15 +151,8 @@ body {
 .team {
   background-color: var(--background-section-three);
 }
-.team-main-title {
-  font-weight: 700px;
-  font-size: 36px;
-  line-height: 1.16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-title-color);
-}
-.team-title {
+
+.teammate-name {
   font-weight: 500px;
   font-size: 16px;
   line-height: 1.18px;
@@ -164,7 +160,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
-.team-text {
+.teammate-position {
   font-size: 16px;
   line-height: 1.18px;
   text-align: center;
@@ -177,61 +173,40 @@ body {
   background-color: var(--background-hero);
 }
 
-.footer-logo {
-  font-family: Raleway;
-  font-weight: 700px;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.logo-secondary {
   color: var(--second-text-color);
 }
-.footer-logo:hover,
-.footer-logo:focus {
-  color: var(--second-title-color);
-}
-.footer-logo-web {
-  color: var(--second-title-color);
-}
-
-.address-map {
-  font-family: Roboto;
+.address {
   font-style: normal;
+}
+.map {
+  font-family: Roboto;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-.address-tel {
+.footer-contact {
   font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address-tel:hover,
-.address-tel:focus {
+.footer-contact:hover,
+.footer-contact:focus {
   color: var(--second-title-color);
 }
 
 /* ---------------------PORTFOLIO----------------------- */
 
-.jobs {
+.portfolio {
   background-color: var(--background-section-one);
 }
-.filter-btm.active {
-  font-family: inherit;
-  font-weight: 500px;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-  background-color: var(--second-title-color);
-}
-.filter-btm {
+
+.secondary-btm {
   font-family: inherit;
   font-weight: 500px;
   font-size: 16px;
@@ -241,18 +216,19 @@ body {
   color: var(--main-title-color);
   background-color: var(--background-section-three);
 }
-.filter-btm:hover,
-.filter-btm:focus {
-  color: var(--second-title-color);
+.secondary-btm:hover,
+.secondary-btm:focus {
+  color: var(--second-text-color);
+  background-color: var(--second-title-color);
 }
-.jobs-title {
+.portfolio-item-title {
   font-weight: 700px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-.jobs-text {
+.portfolio-item-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
