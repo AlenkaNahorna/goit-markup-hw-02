@@ -18,11 +18,9 @@ body {
 .list {
   list-style: none;
 }
-
 .link {
   text-decoration: none;
 }
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -206,7 +204,7 @@ body {
   background-color: var(--background-section-one);
 }
 
-.secondary-btm {
+.secondary-btn {
   font-family: inherit;
   font-weight: 500px;
   font-size: 16px;
@@ -216,8 +214,8 @@ body {
   color: var(--main-title-color);
   background-color: var(--background-section-three);
 }
-.secondary-btm:hover,
-.secondary-btm:focus {
+.secondary-btn:hover,
+.secondary-btn:focus {
   color: var(--second-text-color);
   background-color: var(--second-title-color);
 }
